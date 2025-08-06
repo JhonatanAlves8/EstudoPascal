@@ -3,16 +3,16 @@ var
   nome : string[40];
   genero : char;
 Begin
-  writeln('Digite seu nome:');
+  write('Digite seu nome:');
   readln(nome);
   
-  writeln('Seu gênero, M, F ou Outro:');
+  write('Seu gênero, M, F ou Outro:');
   readln(genero);
   
   case genero of
-    'M':writeln('Masculino');      
-    'F':writeln('Feminino');
-    'O':writeln('outro');     
+    'm':writeln('Masculino');      
+    'f':writeln('Feminino');
+    'o':writeln('Outro');     
     else writeln('Gênero inválido');
    end;
    readln;
